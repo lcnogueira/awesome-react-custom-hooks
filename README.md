@@ -19,9 +19,7 @@ import { useMyHook } from 'awesome-react-custom-hooks'
 
 const Example = () => {
   const example = useMyHook()
-  return (
-    <div>{example}</div>
-  )
+  return <div>{example}</div>
 }
 ```
 

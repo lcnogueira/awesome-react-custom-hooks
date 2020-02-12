@@ -19,7 +19,9 @@
     "start": "rollup -c -w",
     "prepare": "yarn run build",
     "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "lint": "eslint src/**/*.js --fix",
+    "format": "prettier --write \"src/**/*.{js,jsx,json,md}\""
   },
   "peerDependencies": {
     "react": "^16.9.0"
@@ -49,14 +51,17 @@
     "babel-eslint": "^10.0.1",
     "cross-env": "^5.2.0",
     "eslint": "5.16.0",
+    "eslint-config-prettier": "^6.10.0",
     "eslint-config-standard": "^11.0.0",
     "eslint-config-standard-react": "^6.0.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-promise": "^4.0.0",
     "eslint-plugin-react": "^7.10.0",
     "eslint-plugin-standard": "^3.1.0",
     "gh-pages": "^2.0.1",
+    "prettier": "^1.19.1",
     "react": "^16.9.0",
     "react-scripts": "^3.0.1",
     "react-test-renderer": "^16.9.0",

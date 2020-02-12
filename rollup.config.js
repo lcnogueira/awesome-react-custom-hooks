@@ -12,21 +12,21 @@ export default {
     {
       file: pkg.main,
       format: 'cjs',
-      sourcemap: true
+      sourcemap: true,
     },
     {
       file: pkg.module,
       format: 'es',
-      sourcemap: true
-    }
+      sourcemap: true,
+    },
   ],
   plugins: [
     external(),
     url({ exclude: ['**/*.svg'] }),
     babel({
-      exclude: 'node_modules/**'
+      exclude: 'node_modules/**',
     }),
     resolve(),
-    commonjs()
-  ]
+    commonjs(),
+  ],
 }
