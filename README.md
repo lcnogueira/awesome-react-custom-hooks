@@ -15,34 +15,34 @@ npm install --save awesome-react-custom-hooks
 ### useFetch
 
 ```jsx
-  import React from 'react'
-  import { useFetch } from 'awesome-react-custom-hooks'
+import React from "react";
+import { useFetch } from "awesome-react-custom-hooks";
 
-  const App = () => {
-    const [res, error, isLoading] = useFetch(
-      'https://api.github.com/users/lcnogueira'
-    )
+const App = () => {
+  const [res, error, isLoading] = useFetch(
+    "https://api.github.com/users/lcnogueira"
+  );
 
-    if (error) {
-      return <div>Error</div>
-    }
-    return (
-      <>
-        <h1>useFetch Example</h1>
-        {isLoading ? <div>Loading...</div> : JSON.stringify(res)}
-      </>
-    )
+  if (error) {
+    return <div>Error</div>;
   }
+  return (
+    <>
+      <h1>useFetch Example</h1>
+      {isLoading ? <div>Loading...</div> : JSON.stringify(res)}
+    </>
+  );
+};
 ```
 
 ### useLocalStorageState
 
 ```jsx
-import React from 'react'
-import { useLocalStorageState } from 'awesome-react-custom-hooks'
+import React from "react";
+import { useLocalStorageState } from "awesome-react-custom-hooks";
 
 function App() {
-  const [counter, setCounter] = useLocalStorageState('counter', 0)
+  const [counter, setCounter] = useLocalStorageState("counter", 0);
 
   return (
     <>
@@ -50,13 +50,13 @@ function App() {
       <div>{counter}</div>
       <button
         onClick={() => {
-          setCounter(counter + 1)
+          setCounter(counter + 1);
         }}
       >
         Add counter
       </button>
     </>
-  )
+  );
 }
 ```
 
@@ -124,7 +124,6 @@ function App() {
     </>
   );
 }
-
 ```
 
 ## License
