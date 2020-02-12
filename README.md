@@ -77,10 +77,11 @@ function App() {
   );
 }
 ```
+### useDataApi
 
 ```js
 import React, { useState } from "react";
-import { useMousePosition } from "awesome-react-custom-hooks";
+import { useDataApi } from "awesome-react-custom-hooks";
 
 function App() {
   const [query, setQuery] = useState("redux");
