@@ -1,19 +1,4 @@
-import * as React from 'react'
-
-export const useMyHook = () => {
-  let [{ counter }, setState] = React.useState({
-    counter: 0,
-  })
-
-  React.useEffect(() => {
-    let interval = window.setInterval(() => {
-      counter++
-      setState({ counter })
-    }, 1000)
-    return () => {
-      window.clearInterval(interval)
-    }
-  }, [])
-
-  return counter
-}
+export { default as useFetch } from './hooks/useFetch'
+export { default as useDataApi } from './hooks/useDataApi'
+export { default as useLocalStorageState } from './hooks/useLocalStorageState'
+export { default as useMousePosition } from './hooks/useMousePosition'

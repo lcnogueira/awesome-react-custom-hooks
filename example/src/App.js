@@ -1,8 +1,22 @@
 import React from 'react'
-import { useMyHook } from 'awesome-react-custom-hooks'
+import { useLocalStorageState } from 'awesome-react-custom-hooks'
 
-const App = () => {
-  const example = useMyHook()
-  return <div>{example}</div>
+function App() {
+  const [counter, setCounter] = useLocalStorageState('counter', 0)
+
+  return (
+    <div>
+      <h1>useLocalStorageState Example</h1>
+      <div>{counter}</div>
+      <button
+        onClick={() => {
+          setCounter(counter + 1)
+        }}
+      >
+        Add counter
+      </button>
+    </div>
+  )
 }
+
 export default App
