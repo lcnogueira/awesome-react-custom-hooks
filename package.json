@@ -20,6 +20,7 @@
     "prepare": "yarn run build",
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build",
+    "postpublish": "git push --tags",
     "lint": "eslint src/**/*.js --fix",
     "format": "prettier --write \"src/**/*.{js,jsx,json,md}\""
   },
