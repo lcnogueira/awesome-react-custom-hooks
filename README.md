@@ -126,10 +126,14 @@ function App() {
 }
 ```
 
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on the process for submitting pull requests to us.
+
 ## License
 
 MIT © [lcnogueira](https://github.com/lcnogueira)
 
 ---
 
-This hook is created using [create-react-hook](https://github.com/hermanya/create-react-hook).
+This library was bootstraped with [create-react-hook](https://github.com/hermanya/create-react-hook).
